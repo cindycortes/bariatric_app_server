@@ -16,7 +16,7 @@ app.use(cors())
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 
-app.use('/', require('./routes/indexRoutes'))
+// app.use('/', require('./routes/indexRoutes'))
 app.use('/', require('./config/routes'))
 
 app.listen(port, function() {
